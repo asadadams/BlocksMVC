@@ -1,9 +1,12 @@
 <?php
 
 class Home extends Controller {
+    public function __construct() {
+
+    }
 
     public function index() {
-        echo 'This is Home';
+        $this->view( 'home', ['title'=>'Blocks - Minimal MVC Framework'] );
     }
 }
 
