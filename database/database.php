@@ -1,6 +1,17 @@
 <?php
 use Illuminate\Database\Capsule\Manager as Capsule;
 
+/*
+|--------------------------------------------------------------------------
+| Eloquent ORM Setup
+|--------------------------------------------------------------------------
+|
+| Blocks uses a Eloquent ORM
+| This file is where Eloquent ORM setup is done . There is no need make changes here.
+| To change Database configurations, refer to the database config in the app/config directory
+|
+*/
+
 $capsule = new Capsule;
 
 $capsule->addConnection( [

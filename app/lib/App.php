@@ -1,11 +1,25 @@
 <?php
 
+/*
+|--------------------------------------------------------------------------
+| Core Blocks App
+|--------------------------------------------------------------------------
+|
+| This file is the core of Blocks MVC
+|
+*/
+
 class App {
 
     private $controller = 'Home';
     private $method = 'index';
     private $params = [];
 
+    /**
+    * App's constructor, parse url 
+     *
+     * @return void
+     */
     public function __construct() {
         $url = $this->parseUrl();
 
@@ -28,7 +42,13 @@ class App {
         call_user_func_array( [$this->controller, $this->method], $this->params );
     }
 
-    public function parseUrl() {
+    /**
+     * Parse's URL
+    *
+    * @return void
+    */
+
+    private function parseUrl() {
         if ( isset( $_GET['url'] ) ) {
             return explode( '/', rtrim( $_GET['url'], '/' ) );
         }
