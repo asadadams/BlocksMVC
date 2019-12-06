@@ -5,6 +5,10 @@
 | Core Blocks App
 |--------------------------------------------------------------------------
 |
+| Blocks Framework
+| https://github.com/asadadams/BlocksMVC
+| Softvision Co
+|
 | This file is the core of Blocks MVC
 |
 */
