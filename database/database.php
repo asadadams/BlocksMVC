@@ -25,6 +25,8 @@ $capsule->addConnection( [
     'prefix'    => DB_PREFIX,
 ] );
 
+$capsule->setAsGlobal();
+
 // Setup the Eloquent ORM
 $capsule->bootEloquent();
 ?>

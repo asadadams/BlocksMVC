@@ -1,5 +1,11 @@
 {
   "require": {
     "illuminate/database": "^6.6"
+  },
+  "autoload": {
+    "classmap": [
+      "app/Core",
+      "app/Helpers"
+    ]
   }
 }

@@ -21,7 +21,7 @@ define( 'APPROOT', dirname( dirname( __FILE__ ) ) );
 |
 */
 
-define( 'URLROOT', 'http://localhost/blocks' );
+define( 'URLROOT', 'localhost/blocks' );
 
 /*
 |--------------------------------------------------------------------------

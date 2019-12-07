@@ -18,6 +18,7 @@ class App {
     private $controller = 'Home';
     private $method = 'index';
     private $params = [];
+    private $controller_base = '../app/Controllers/';
 
     /**
     * App's constructor, parse url 
@@ -26,13 +27,19 @@ class App {
      */
     public function __construct() {
         $url = $this->parseUrl();
-
-        if ( file_exists( '../app/controllers/'.ucwords( $url[0] ).'.php' ) ) {
-            $this->controller = ucwords( $url[0] );
-            unset( $url[0] );
+        
+        if($url[0]!=NULL){
+            if (file_exists( '../app/Controllers/'.ucwords( $url[0] ).'.php' ) ) {
+                $this->controller = ucwords( $url[0] );
+                unset( $url[0] );
+            }else{
+                $this->controller = "Error404";
+                $this->controller_base = '../app/Core/Exceptions/Controllers/';
+            }
         }
 
-        require_once( '../app/controllers/'.$this->controller.'.php' );
+
+        require_once( $this->controller_base.$this->controller.'.php' );
         $this->controller = new $this->controller;
 
         if ( isset( $url[1] ) ) {

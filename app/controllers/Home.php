@@ -1,8 +1,10 @@
 <?php
 
 class Home extends Controller {
-    public function __construct() {
+    protected $user;
 
+    public function __construct() {
+        $this->user = $this->model( 'User' );
     }
 
     public function index() {
