@@ -23,8 +23,9 @@ class Controller {
         $model = ucwords($model);
         if ( file_exists( $path. $model.'.php' ) ) {
             require_once( $path.$model.'.php' );
-            
+       
             //Returning an instance of the model;
+            $model = 'Models\\'.$model;
             return new $model;
         }
     }

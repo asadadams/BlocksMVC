@@ -3,6 +3,9 @@
     "illuminate/database": "^6.6"
   },
   "autoload": {
+    "psr-4": {
+      "Models\\": "app/Models"
+    },
     "classmap": [
       "app/Core",
       "app/Helpers"
