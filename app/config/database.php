@@ -17,5 +17,6 @@ define( 'DB_PASSWORD', '' );
 define( 'DB_CHARSET', 'utf8' );
 define( 'DB_COLLATION', 'utf8_unicode_ci' );
 define( 'DB_PREFIX', '' );
+define( 'DB_PORT', 3306 );
 
 ?>

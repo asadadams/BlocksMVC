@@ -9,8 +9,8 @@
 |
 */
 
-require_once( 'config/app.php' );
-require_once( 'config/database.php' );
+require_once( 'Config/app.php' );
+require_once( 'Config/database.php' );
 require_once( '../vendor/autoload.php' );
-require_once( '../database/database.php' );
+require_once( '../setup/database.php' );
 ?>
