@@ -5,13 +5,21 @@ const capitalize = s => {
   return s.charAt(0).toUpperCase() + s.slice(1);
 };
 
-function createFile(path, content, className) {
+async function createFile(path, content, className) {
   try {
-    const data = fs.writeFileSync(
-      `${path}/${capitalize(className)}.php`,
-      content
-    );
-    //file written successfully
+    if (
+      (await fs.existsSync(`${path}/${capitalize(className)}.php`)) === false
+    ) {
+      const data = fs.writeFileSync(
+        `${path}/${capitalize(className)}.php`,
+        content
+      );
+      //file written successfully
+    } else {
+      console.error(
+        `Err: ${path}/${capitalize(className)}.php file already exists`
+      );
+    }
   } catch (err) {
     console.error(`Err: ${err}`);
   }

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A PHP minimal framework",
   "dependencies": {
-    "blocksmvc-cli": "^2.3.0",
+    "blocksmvc-cli": "^2.3.1",
     "gulp": "^4.0.2",
     "gulp-csso": "^4.0.1"
   },

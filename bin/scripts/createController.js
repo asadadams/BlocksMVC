@@ -9,7 +9,7 @@ const content = `<?php
       public function __construct() {}
   
       public function index() {
-          
+          echo "${func.capitalize(className)} generated page";
       }
   }
 
