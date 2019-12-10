@@ -4,8 +4,12 @@ return [
     'paths' => [
         'migrations' => 'database/migrations'
     ],
+    'migration_base_class'=> 'Migration',
+    'templates'=>[
+        'file'=> 'app/Core/Migration.template'
+    ],
     'environments' => [
-        'default_migration_table' => 'migration',
+        'default_migration_table' => 'migrations',
         'default_database' => 'dev',
         'dev' => [
             'adapter' => DB_DRIVER,
