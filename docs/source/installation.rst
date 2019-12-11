@@ -8,6 +8,15 @@ The `Blocks framework <https://github.com/asadadams/blocksmvc>`_  repository hol
 
 Develop your app inside the app folder, and the public folder will be your public-facing document root. Do not change anything inside the system folders!
 
+===========================
+Via Composer Create-Project
+===========================
+Alternatively, you may also install Blocks by issuing the Composer create-project command in your terminal:
+
+.. code-block:: console
+
+    composer create-project --prefer-dist blocks/framework projectName
+
 ==================
 Installation
 ==================

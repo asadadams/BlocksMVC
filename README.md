@@ -16,11 +16,17 @@ Why not use the other frameworks available? I found that most frameworks are too
 
 ## Learning Blocks
 
-Blocks has an extensive and thorough [documentation](https://laravel.com/docs)
+Blocks has an extensive and thorough [documentation](https://readthedocslink)
 
-## Server Requirements
+## Requirements
 
-PHP version 7.0 or higher
+- PHP version 7.0 or higher
+- Composer
+- Node.js
+
+## CLI
+
+Blocks also comes with a command-line (CLI) tool which can be found here [blocks-cli](https://github.com/asadadams/Blocks-cli)
 
 ## Contributing
 
