@@ -23,25 +23,27 @@ class Url {
     }
 
     /**
-    * Getting an HTTPS url
+    * Return a secure HTTPS url
     *
-    * @param  String $link
+    * @param  String $path
     *
     * @return String
     */
-    public static function secure_url( $link ) {
-        return 'https://'. URLROOT .'/'.$link;
+    public static function secure_public( $path = '' ) {
+        if ( !empty( $path ) ) return 'https://'. URLROOT .'/'.$path;
+        else return 'https://'. URLROOT;
     }
 
     /**
-    * Getting an HTTP url
+    * Returns public url
     *
-    * @param  String $link
+    * @param  String $path
     *
     * @return String
     */
-    public static function get_url( $link ) {
-        return 'http://'. URLROOT .'/'.$link;
+    public static function public( $path = '' ) {
+        if ( !empty( $path ) ) return 'http://'. URLROOT .'/'.$path;
+        else return 'http://'. URLROOT;
     }
 }
 ?>

@@ -162,16 +162,16 @@ void
 
 .. code-block:: php
 	
-	Url::secure_url( [$link=''] )
+	Url::secure_public( {$path=''} )
 	
-*Getting a secure HTTPS url*
+*Generates a fully secured qualified URL to the public directory or a path*
 	
 **Parameters**:	
 
-* $link (string) – The link
+* $path (string) – The path
 
 **Returns**:	
-the secure https url of the link
+secure URL to public directory or a path
 
 **Return type**:	
 String
@@ -179,16 +179,16 @@ String
 
 .. code-block:: php
 	
-	Url::get_url( [$link=''] )
+	Url::public( [$path=''] )
 	
-*Getting a HTTP url*
+*Generates a fully qualified URL to the public directory or a path*
 	
 **Parameters**:	
 
-* $link (string) – The link
+* $path (string) – The path
 
 **Returns**:	
-the url of the link
+URL to public directory or a path
 
 **Return type**:	
 String
