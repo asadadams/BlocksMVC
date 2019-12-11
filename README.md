@@ -1,6 +1,6 @@
 # Blocks
 
-<p align="center"><img src="https://res.cloudinary.com/daf8xutfa/image/upload/v1576065012/logo_transparent_l4t9hq.png" width="290"></p>
+<p align="center"><img src="https://res.cloudinary.com/daf8xutfa/image/upload/v1576065012/logo_transparent_l4t9hq.png" width="250"></p>
 
 <p align="center">
 <a href="#"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintaince"></a>
