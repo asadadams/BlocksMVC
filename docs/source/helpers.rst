@@ -10,8 +10,6 @@ Str   	 Helper functions related to Strings
 Url  	 Helper functions related to URL  
 =======  =======================================
 
-anchor_popup([$uri = ''[, $title = ''[, $attributes = FALSE[, $altConfig = NULL]]]])
-
 Sessions Helper
 -------------------
 The following are the static methods available:

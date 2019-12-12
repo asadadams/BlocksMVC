@@ -29,12 +29,18 @@ class App {
         $url = $this->parseUrl();
         
         if($url[0]!=NULL){
-            if (file_exists( '../app/Controllers/'.ucwords( $url[0] ).'.php' ) ) {
+            if($url[0] == 'Error404' || $url[0] == 'Error401' || $url[0] == 'Error500'){
                 $this->controller = ucwords( $url[0] );
+                $this->controller_base = '../app/Core/Exceptions/Controllers/';
                 unset( $url[0] );
             }else{
-                $this->controller = "Error404";
-                $this->controller_base = '../app/Core/Exceptions/Controllers/';
+                if (file_exists( '../app/Controllers/'.ucwords( $url[0] ).'.php' ) ) {
+                    $this->controller = ucwords( $url[0] );
+                    unset( $url[0] );
+                }else{
+                    $this->controller = "Error404";
+                    $this->controller_base = '../app/Core/Exceptions/Controllers/';
+                }
             }
         }
 

@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>404: Page Not Found</title>
+        <title>401: Unauthorized</title>
         <!-- Favicon -->
         <link rel="shortcut icon" href="<?php echo Url::public('/img/favicon.png');?>">
         <!-- Bootstrap -->
@@ -11,8 +11,8 @@
     </head>
     <body>
         <div class = 'main container'>
-            <p id = 'page-title'>404</p>
-            <p id = 'page-caption'>Page Not Found</p>
+            <p id = 'page-title'>401</p>
+            <p id = 'page-caption'>Unauthorized</p>
         </div>
     </body>
 </html>

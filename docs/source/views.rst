@@ -24,11 +24,20 @@ Let's create a simple view and load it with the controller we have already creat
 
 Loading a View
 ---------------
-To load the view in our **index** method in the controoler
+To load the view in our **index** method in the controller
 
 .. code-block:: php
 	
-	$this->load->view('dashboard');
+	$this->view('dashboard');
 	
 .. note:: You don't need the .php extension
 
+Error Handling
+---------------
+Blocks let you show 3 error pages by default, these are 404,401 and 500 pages. Blocks automatically shows a 404 page if a controller is not found. You can load a an error page in a controller by loading a view of 404,401 or 500
+
+.. code-block:: php
+	
+	$this->view('404');
+	
+The default templates of these error pages are located at **app/Core/Exceptions/Views**
