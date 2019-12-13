@@ -16,7 +16,7 @@ Why not use the other frameworks available? I found that most frameworks are too
 
 ## Learning Blocks
 
-Blocks has an extensive and thorough [documentation](https://readthedocslink)
+Blocks has an extensive and thorough [documentation](https://blocksmvc.readthedocs.io/en/latest/)
 
 ## Requirements
 
