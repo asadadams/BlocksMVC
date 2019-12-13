@@ -5,7 +5,7 @@
 <p align="center">
 <a href="#"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="Maintaince"></a>
 <a href="#"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
-<a href="#"><img src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103" alt="Open source"></a>
+<a href="https://packagist.org/packages/blocks/framework"><img src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103" alt="Open source"></a>
 
 </p>
 
@@ -13,6 +13,8 @@
 
 Blocks is a very minimal PHP framework for building web applications. So why another PHP framework?
 Why not use the other frameworks available? I found that most frameworks are too large and contain too many dependencies or might be too micro and will have to install other dependencies. So with me not liking to work with most PHP frameworks , I decided to develop a minimal framework which is not too large and not too small either.
+
+[https://packagist.org/packages/blocks/framework](https://packagist.org/packages/blocks/framework)
 
 ## Learning Blocks
 
