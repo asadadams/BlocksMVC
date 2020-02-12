@@ -15,7 +15,7 @@ Alternatively, you may also install Blocks by issuing the Composer create-projec
 
 .. code-block:: console
 
-    composer create-project --prefer-dist blocks/framework projectName
+	composer create-project blocks/framework projectName
 
 ==================
 Installation
