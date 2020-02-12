@@ -1,0 +1,1 @@
+Migrations are generated to this folder
