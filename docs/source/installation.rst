@@ -29,3 +29,5 @@ Setting Up
 * Download and install `Node js <https://nodejs.org/en/>`_
 * Run ``npm install`` (Installing command-line tool (CLI))
 * Run ``composer install``
+* In **gulpfile.js** on **line 61** change proxy from **http://localhost/blocks** to **http://localhost/<your directory name>** 
+* In **.htaccess** in the **public** directory change **line 3** from **RewriteBase /blocks/public** to **RewriteBase /<your directory name>/public** 
