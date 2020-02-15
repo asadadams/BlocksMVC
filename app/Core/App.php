@@ -26,6 +26,7 @@ class App {
      * @return void
      */
     public function __construct() {
+		session_start();//starting session for app
         $url = $this->parseUrl();
         
         if($url[0]!=NULL){

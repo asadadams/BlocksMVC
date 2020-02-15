@@ -11,10 +11,6 @@
 
 class Session {
 
-    public function _construct() {
-        session_start();
-    }
-
     /**
     * Check if session is set
     *

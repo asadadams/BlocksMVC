@@ -21,7 +21,7 @@ define( 'APPROOT', dirname( dirname( __FILE__ ) ) );
 |
 */
 
-define( 'URLROOT', 'localhost/blocks' );
+define( 'URLROOT', $_SERVER['HTTP_HOST'].'/forum' );
 
 /*
 |--------------------------------------------------------------------------

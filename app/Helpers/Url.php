@@ -19,7 +19,8 @@ class Url {
     * @return void
     */
     public static function redirect( $page ) {
-        header( 'location: ' . URLROOT . '/' . $page );
+        header( 'location: http://'.URLROOT.'/'. $page );
+        exit;
     }
 
     /**
