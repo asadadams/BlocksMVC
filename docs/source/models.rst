@@ -36,3 +36,12 @@ Migrations
 In software engineering, schema migration (also database migration, database change management) refers to the management of incremental, reversible changes and version control to relational database schemas. A schema migration is performed on a database whenever it is necessary to update or revert that database's schema to some newer or older version. Migrations are performed programmatically by using a schema migration tool. `Source: Wikipedia <https://en.wikipedia.org/wiki/Schema_migration>`_.  
 
 Blocks can make Database migrations only with it's command-line tool (CLI) `Blocks-cli <https://github.com/asadadams/Blocks-cli>`_.  
+
+Resources
+-------------
+
+Please read these resources to be able to use migrations and models 
+
+- `Eloquent ORM <https://laravel.com/docs/4.2/eloquent>`_
+- `Schema Building <https://laravel.com/docs/4.2/schema>`_
+- `Writing Migrations <https://book.cakephp.org/phinx/0/en/migrations.html>`_
