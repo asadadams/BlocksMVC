@@ -4,7 +4,8 @@
 
 ### Added
 
-- Migrations and Models resources
+- Migrations and Models resources to documentation
+- Added example application link to README
 
 ## [1.0.1] - 15-02-2020
 
